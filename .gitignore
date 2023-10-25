@@ -1,0 +1,68 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
+
+# ================ #
+# Unity don't diff #
+# ================ #
+*.asset -diff
+*.unity -diff
+*.prefab -diff
+*.anim -diff
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+Build/
+.vs/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =========== #
+# Core        #
+# =========== #
+Build/
+Builds/
+Builds.apk/
+Assets/Resources/Configs/Localisation/
+AssetBundles/*
+Tools/tmp/*
+Xcode.Extras/
+
+# ========== #
+# Pycharm    #
+# ========== #
+Tools/Scripts/.idea
+
+# =========== #
+# Design      #
+# =========== #
+Screenshots/
+Recordings/
+
+# =========== #
+# Rider       #
+# =========== #
+.idea
