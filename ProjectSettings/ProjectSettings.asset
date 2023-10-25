@@ -217,9 +217,9 @@ PlayerSettings:
   iOSLaunchScreeniPadCustomStoryboardPath: 
   iOSDeviceRequirements: []
   iOSURLSchemes:
-  - lync
+  - lyncTest
   macOSURLSchemes:
-  - lync
+  - lyncTest
   iOSBackgroundModes: 0
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1

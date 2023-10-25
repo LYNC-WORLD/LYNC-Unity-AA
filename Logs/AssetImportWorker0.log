@@ -264,3 +264,59 @@ Received Import Request.
   path: Assets/LYNC/LYNC Manager.prefab
   artifactKey: Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/LYNC/LYNC Manager.prefab using Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7940885e8600a661d75cdf5ed053bf') in 0.162375 seconds 
+[usbmuxd] Attached: 396 00008030-000614362682402E
+========================================================================
+Received Import Request.
+  Time since last request: 11144.751670 seconds.
+  path: Assets/Example/Login and Transactions Example.unity
+  artifactKey: Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Example/Login and Transactions Example.unity using Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4ce9ee9150240266de7411c4e4d992') in 0.003641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.379797 seconds.
+  path: Assets/LYNC/LYNC Manager.prefab
+  artifactKey: Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/LYNC Manager.prefab using Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cabd00cc0cf4cf0d744dafd737b8c69') in 0.022624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.769606 seconds.
+  path: Assets/Example-2
+  artifactKey: Guid(476a4fd284d2e9e43946ec42c5799e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Example-2 using Guid(476a4fd284d2e9e43946ec42c5799e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600041d0ebff8f3d2ab8a44c1605d76b') in 0.001715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.054643 seconds.
+  path: Assets/Example-2/ErrorCanvas.prefab
+  artifactKey: Guid(a19cd867d251e22459a5112351b0c61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Example-2/ErrorCanvas.prefab using Guid(a19cd867d251e22459a5112351b0c61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f541ee1b102a6ba0c42b49b9f6b812') in 0.122594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.322215 seconds.
+  path: Assets/Example-2/ExampleScene.unity
+  artifactKey: Guid(979eb37d5b50b9847a8bd0f4cdecfbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Example-2/ExampleScene.unity using Guid(979eb37d5b50b9847a8bd0f4cdecfbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631b38e75d05a159ff1675fb3afb05f3') in 0.001883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.889392 seconds.
+  path: Assets/Example/Login and Transactions Example.unity
+  artifactKey: Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Example/Login and Transactions Example.unity using Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92bffd223964ce4f1a80754f2110eec') in 0.001204 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.6 MB). Loaded Objects now: 3524.
+Memory consumption went from 47.6 MB to 47.0 MB.
+Total: 10.375917 ms (FindLiveObjects: 0.301875 ms CreateObjectMapping: 0.068333 ms MarkObjects: 9.599625 ms  DeleteObjects: 0.403000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
