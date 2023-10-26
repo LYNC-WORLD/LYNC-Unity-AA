@@ -5,14 +5,14 @@ using LYNC;
 using LYNC.Wallet;
 using UnityEngine;
 
-public class SampleScene : MonoBehaviour
+public class LoginTransactionExample : MonoBehaviour
 {
     public string loginUrl;
 
     public TMPro.TMP_Text tMP_Text, tsxHash;
     public UnityEngine.UI.Button login, logout, mint, polyscan;
 
-    public static SampleScene Instance { get; private set; }
+    public static LoginTransactionExample Instance { get; private set; }
 
     private void Start()
     {

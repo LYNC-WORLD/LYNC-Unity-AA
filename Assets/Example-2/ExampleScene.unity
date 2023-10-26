@@ -1645,7 +1645,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764018158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c63417ac4913a734b9d08fef560150cf, type: 3}
+  m_Script: {fileID: 11500000, guid: d0a04171aafa143d5aa67791523e5384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loginUrl: https://login.lync.world/mobile-connect
@@ -2083,7 +2083,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5805647402976630236, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: deepLinkUrl
-      value: lyncTest
+      value: testing
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728992, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: LyncAPIKey
@@ -2092,6 +2092,10 @@ PrefabInstance:
     - target: {fileID: 8536144024681728992, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: web3AuthClientID
       value: BFKyj7mVffGPkfQh5iBeezv8Hc9HbL4kV553OnJ2JPRD37QyXs4NaGbHPI0NpbtgoH0PlkRc_Fi9-fpkPChBHIM
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_LocalPosition.x
