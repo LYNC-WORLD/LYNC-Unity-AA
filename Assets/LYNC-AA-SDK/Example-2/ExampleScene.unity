@@ -2081,33 +2081,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5805647402976630236, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
-      propertyPath: deepLinkUrl
-      value: lync
-      objectReference: {fileID: 0}
-    - target: {fileID: 8536144024681728992, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
-      propertyPath: LyncAPIKey
-      value: C76FCFCF99C1A09FAA1ED2F727943E18
-      objectReference: {fileID: 0}
-    - target: {fileID: 8536144024681728992, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
-      propertyPath: web3AuthClientID
-      value: BFKyj7mVffGPkfQh5iBeezv8Hc9HbL4kV553OnJ2JPRD37QyXs4NaGbHPI0NpbtgoH0PlkRc_Fi9-fpkPChBHIM
-      objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 677.8752
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 339.39752
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.507679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536144024681728995, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
       propertyPath: m_LocalRotation.w
