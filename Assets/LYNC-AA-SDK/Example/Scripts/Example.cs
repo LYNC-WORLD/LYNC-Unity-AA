@@ -74,8 +74,6 @@ public class Example : MonoBehaviour
                 logout.interactable = false;
 
                 Lync.WalletAuth.Logout();
-                PlayerPrefs.DeleteAll();
-                PlayerPrefs.Save();
             }
             catch (System.Exception e)
             {

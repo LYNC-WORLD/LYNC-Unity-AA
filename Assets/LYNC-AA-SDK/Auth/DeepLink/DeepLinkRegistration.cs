@@ -7,7 +7,7 @@ namespace LYNC.Wallet
 #endif
     public class DeepLinkRegistration : MonoBehaviour
     {
-        public string deepLinkUrl = "lync";
+        public string deepLinkUrl;
         public static string DeepLinkUrl { private set; get; }
 
         private void Start()
