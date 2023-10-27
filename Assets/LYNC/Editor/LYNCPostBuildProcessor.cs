@@ -50,8 +50,6 @@ public class LYNCPostBuildProcessor : IPostGenerateGradleAndroidProject
                         dataNode.Attributes["android:scheme"].Value == DeepLinkRegistration.DeepLinkUrl &&
                         dataNode.Attributes["android:host"].Value == "")
                     {
-                        // Debug.Log("LYNC_DEEPLINK_SCHEME"+LYNC_DEEPLINK_SCHEME);
-                        Debug.Log("android:scheme"+dataNode.Attributes["android:scheme"].Value);
                         intentFilterExists = true;
                         break;
                     }
