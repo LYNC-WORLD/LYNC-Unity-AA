@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LYNC/Example-2/ExampleScene.unity
+    path: Assets/LYNC-AA-SDK/Example-2/ExampleScene.unity
     guid: 979eb37d5b50b9847a8bd0f4cdecfbf6
   m_configObjects: {}
