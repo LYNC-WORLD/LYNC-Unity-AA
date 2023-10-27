@@ -3365,3 +3365,299 @@ Received Import Request.
   path: Assets/LYNC/LYNC Manager.prefab
   artifactKey: Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/LYNC/LYNC Manager.prefab using Guid(2a88366018afe964b965e199ff79c9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7940885e8600a661d75cdf5ed053bf') in 0.107459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 352.507076 seconds.
+  path: Assets/LYNC/LyncSDK.dll
+  artifactKey: Guid(f45692eb41e9e4c5bab593505bbbbd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/LyncSDK.dll using Guid(f45692eb41e9e4c5bab593505bbbbd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a64a9c2ed20f77e5552605e422099d') in 0.757461 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003376 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.754 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3756ms)
+		BeginReloadAssembly (541ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (58ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (168ms)
+		EndReloadAssembly (2962ms)
+			LoadAssemblies (300ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (457ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (1915ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (109ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (1560ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (22.0 KB). Loaded Objects now: 3670.
+Memory consumption went from 119.7 MB to 119.7 MB.
+Total: 3.142708 ms (FindLiveObjects: 0.195750 ms CreateObjectMapping: 0.085791 ms MarkObjects: 2.828042 ms  DeleteObjects: 0.031709 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81.316970 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(c098be2d8036a485db5ec07112939f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(c098be2d8036a485db5ec07112939f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5ca7c4c888589d74439b4033f8631d') in 0.024316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.941797 seconds.
+  path: Assets/LYNC 1
+  artifactKey: Guid(2a8d47f3c0ed84dd1b5362bed873c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC 1 using Guid(2a8d47f3c0ed84dd1b5362bed873c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d1195d567aa507eb5b14a5570878b6') in 0.001202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.633551 seconds.
+  path: Assets/LYNC/Resources/StreamingAssets
+  artifactKey: Guid(dc75cc43d5a7ee447bdb51b2f6efac72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/StreamingAssets using Guid(dc75cc43d5a7ee447bdb51b2f6efac72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d345aa47e538857c311314810a6291') in 0.001649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.008145 seconds.
+  path: Assets/LYNC/Resources/StreamingAssets/Executables
+  artifactKey: Guid(b039c62e614fed4419c769e3f7cd1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/StreamingAssets/Executables using Guid(b039c62e614fed4419c769e3f7cd1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bcdd6170bfb584fc0e32e803a0a5191') in 0.001639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.913016 seconds.
+  path: Assets/LYNC/Resources/StreamingAssets/Executables/Launcher.rar
+  artifactKey: Guid(b677a5292ee5b664b905659f843be8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/StreamingAssets/Executables/Launcher.rar using Guid(b677a5292ee5b664b905659f843be8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad2a80b51bf665492c26c3c1f03735e') in 0.443067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354149 seconds.
+  path: Assets/LYNC/Resources/StreamingAssets/Executables/Launcher.exe
+  artifactKey: Guid(73a5f82892e12c146ae40947c369ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/StreamingAssets/Executables/Launcher.exe using Guid(73a5f82892e12c146ae40947c369ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9a33ebf24647472690056bf9708cbc') in 0.255142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.823585 seconds.
+  path: Assets/LYNC/Resources/StreamingAssets/Executables/register.reg
+  artifactKey: Guid(65087cd91f04c8e4aa51aeb73239c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/StreamingAssets/Executables/register.reg using Guid(65087cd91f04c8e4aa51aeb73239c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c534cb39844be50005669b133b8c3645') in 0.086681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.466819 seconds.
+  path: Assets/Editor/LYNCPostBuildProcessor.cs
+  artifactKey: Guid(b5414ef05db2d4a49a347dbf128a7b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/LYNCPostBuildProcessor.cs using Guid(b5414ef05db2d4a49a347dbf128a7b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81733dd80f24e85494e79a551e205a04') in 0.004825 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001767 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.394 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3397ms)
+		BeginReloadAssembly (473ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (172ms)
+		EndReloadAssembly (2644ms)
+			LoadAssemblies (249ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (367ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (1708ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (109ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (1402ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (22.0 KB). Loaded Objects now: 3674.
+Memory consumption went from 132.2 MB to 132.2 MB.
+Total: 3.060250 ms (FindLiveObjects: 0.251834 ms CreateObjectMapping: 0.075334 ms MarkObjects: 2.692917 ms  DeleteObjects: 0.039000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001726 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.259 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3261ms)
+		BeginReloadAssembly (402ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (48ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (2613ms)
+			LoadAssemblies (245ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (355ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (1665ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (102ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (1366ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (22.0 KB). Loaded Objects now: 3677.
+Memory consumption went from 132.2 MB to 132.2 MB.
+Total: 3.884000 ms (FindLiveObjects: 0.365541 ms CreateObjectMapping: 0.098292 ms MarkObjects: 3.391834 ms  DeleteObjects: 0.026708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002738 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/shanujoshi/LYNC/UnitySDK/PublishedProject/Unity-AA-SDK/LYNC-AA-SDK/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.349 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4353ms)
+		BeginReloadAssembly (746ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (102ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (212ms)
+		EndReloadAssembly (3269ms)
+			LoadAssemblies (385ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (604ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (1958ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (162ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (1568ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (22.1 KB). Loaded Objects now: 3680.
+Memory consumption went from 132.2 MB to 132.2 MB.
+Total: 3.348833 ms (FindLiveObjects: 0.221458 ms CreateObjectMapping: 0.139458 ms MarkObjects: 2.924250 ms  DeleteObjects: 0.062334 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 155.180076 seconds.
+  path: Assets/LYNC/Resources/Launcher.text
+  artifactKey: Guid(e39653045b8774b88ae9900ac4e664fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC/Resources/Launcher.text using Guid(e39653045b8774b88ae9900ac4e664fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c396c00b25b7d4c2a12d8804ded603') in 0.212267 seconds 
