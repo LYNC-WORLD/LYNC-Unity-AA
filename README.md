@@ -8,7 +8,8 @@ Please get your API key before downloading the SDK from [here](https://www.lync.
 ## Installation
 Import the SDK .unitypackage file to your project. or simply drag and drop .unitypackage file to your project.
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/c54d1e34-6086-4fca-89cc-13169ac75027)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/f7d176b5-2871-44d1-b121-bc43a4ecbbbc)
+
 
 Once the Account Abstraction SDK package has finished importing into your Unity project, you can begin integrating it into your game.
 The Folder structure looks like this
