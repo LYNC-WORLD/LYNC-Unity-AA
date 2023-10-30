@@ -1,5 +1,6 @@
 # LYNC-Unity-AA-SDK
-LYNC AA SDK is a no-code Unity SDK supporting PC (MacOS and Windows) and Mobile (Android and iOS)
+LYNC AA SDK is a no-code Unity SDK allowing game developers, Game studios, Indie Game Developers, and more to Integrate Biconomy Account Abstraction inside their games without worrying about Web3 Complexities.
+Supported Platforms: PC (MacOS and Windows) and Mobile (Android and iOS).
 
 ## Get your API Key
 Please get your API key before downloading the SDK from [here](https://www.lync.world/form.html)
