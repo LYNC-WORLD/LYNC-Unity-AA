@@ -1,4 +1,3 @@
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/205e1917-6400-48e8-a985-2df58229ac95)![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/3ca43756-1bb2-4e57-8f1f-a22ce5a75038)
 # LYNC-Unity-AA-SDK
 LYNC AA SDK is a no-code Unity SDK supporting PC (MacOS and Windows) and Mobile (Android and iOS)
 
