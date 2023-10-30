@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: -278681970, guid: f45692eb41e9e4c5bab593505bbbbd15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LyncAPIKey: C76FCFCF99C1A09FAA1ED2F727943E18
+  LyncAPIKey: 
   chainID: 80001
   dappAPIKey: AIRQgnifH.434ef290-8927-4608-995d-974374c35b90
   web3AuthClientID: BFKyj7mVffGPkfQh5iBeezv8Hc9HbL4kV553OnJ2JPRD37QyXs4NaGbHPI0NpbtgoH0PlkRc_Fi9-fpkPChBHIM

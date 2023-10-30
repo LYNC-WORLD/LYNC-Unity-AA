@@ -1649,12 +1649,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loginUrl: https://login.lync.world/mobile-connect
-  tMP_Text: {fileID: 1852186244}
+  debug_Text: {fileID: 1852186244}
   tsxHash: {fileID: 1733161420}
   login: {fileID: 1448895995}
   logout: {fileID: 510703645}
   mint: {fileID: 1823576275}
-  polyscan: {fileID: 1182765190}
+  polygonScan: {fileID: 1182765190}
 --- !u!114 &1764018163
 MonoBehaviour:
   m_ObjectHideFlags: 0

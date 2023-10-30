@@ -3,7 +3,7 @@ using LYNC.Wallet;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Example : MonoBehaviour
+public class ExampleLogin : MonoBehaviour
 {
     public TMPro.TMP_Text addressTxt, loginDateTxt;
     public Button login, logout;
