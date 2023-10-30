@@ -14,19 +14,19 @@ Import the SDK .unitypackage file to your project. or simply drag and drop .unit
 Once the Account Abstraction SDK package has finished importing into your Unity project, you can begin integrating it into your game.
 The Folder structure looks like this
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/f1d277ed-aab4-4990-978c-1e79fe231d10)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/44828c75-a422-4287-966a-1899571ac051)
 
 ## Integrating AA SDK in Unity
 
 There are 2 Example Projects present in the SDK:
 Assets -> LYNC-AA-SDK -> Example / Example-2
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/7af242b0-38af-4c9b-b468-ac8f60653daa)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/e134fe59-a641-46c4-8034-52d79fa8930e)
 
 You can find the example scene in the folders. Simply pass the API key in lyncManager GameObject.
 To test, Build and Run after adding this scene in (Scene in Build).
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/a495606a-2b0c-4121-9b4c-12187236dfb6)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/08d073f2-a0db-449d-a283-ad5b0b5db5e3)
 
 ## Setup the Project
 
@@ -43,7 +43,7 @@ In LYNC Manager Prefab, be sure to provide the following details:
 Login and Transactions can be done once the action is triggered.
 The Sample Code for Login can be found at LoginTransactionExample.cs and ExampleLogin.cs
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/277b600f-fd3f-48a8-8d14-2b4c954b1f6a)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/7646ff31-8065-4229-98af-af758bf97500)
 
 ### Note: Make sure to Import LYNC.
 
@@ -89,7 +89,7 @@ Pass in the Contract Address and Function Name Example: MintNFT(). MintNFT(unit2
 
 Args are not compulsory parameters, but if the function accepts any argument, make sure to pass them.
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/9234feda-eebd-4797-a127-17e50b7fd610)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/dd696903-5d72-4f4b-b7ec-e386c0abd1ce)
 
 To do it from the script:
 
@@ -104,15 +104,15 @@ onError: If the transactions failed, this handles what to do.
 
 To enable gasless transactions via biconomy, Register a new paymaster on the [Biconomy Dashboard](https://dashboard.biconomy.io/)https://dashboard.biconomy.io/. 
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/d83043e2-eb1c-4f54-9e49-57bbee6a9f8f)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/b73988dc-e456-4129-b009-cfb7906235b3)
 
 Once done, Get the API Key and Pass it into the LYNC Manager.
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/070a291c-fe65-4a7b-83e8-210f895184f3)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/bf226037-8e5b-4f63-94c1-8753866b1f5d)
 
 Setup the gas tank, in Policies create a new one and pass the contract address
 
-![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/d1bec52f-9759-4cda-a118-3ae5ca39e08c)
+![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/a4eaa9a8-ee7c-47b1-a4d6-e2ee2ffc063d)
 
 That's it, now you can do the gasless transaction on this contract address passing in the LYNC AA SDK.
 
