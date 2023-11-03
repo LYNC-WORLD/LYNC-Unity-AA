@@ -71,14 +71,14 @@ namespace LYNC.Wallet
 
         private WalletData ExtractAndSaveWalletFromUrl(string url)
         {
-            System.Uri uri = new(url);
-            string queryString = uri.Query;
-            var queryParameters = System.Web.HttpUtility.ParseQueryString(queryString);
 
-            string publicAddress = queryParameters["wallet"];
-            string encrypted = queryParameters["encrypted"];
-            string smartAccount = queryParameters["smartAccount"];
+            UnityEngine.Debug.Log(url);
 
+            string publicAddress = url.Split(new string[] { "wallet=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+            string encrypted = url.Split(new string[] { "encrypted=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+            string smartAccount = url.Split(new string[] { "smartAccount=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+            
+            UnityEngine.Debug.Log("publicAddress: "+publicAddress+" encrypted: "+ encrypted + "smartAccount: "+smartAccount);
             // Save wallet
             WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount);
             return wallet;

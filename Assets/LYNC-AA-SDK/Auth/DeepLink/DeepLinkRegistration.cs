@@ -7,7 +7,7 @@ namespace LYNC.Wallet
 #endif
     public class DeepLinkRegistration : MonoBehaviour
     {
-        public string deepLinkUrl;
+        public string deepLinkUrl = "lync";
         public static string DeepLinkUrl { private set; get; }
 
         private void Start()
@@ -16,7 +16,7 @@ namespace LYNC.Wallet
 
             if (!string.IsNullOrEmpty(deepLinkUrl))
             {
-#if UNITY_EDITOR
+#if UNITY_EDITOR_OSX
                 UnityEditor.PlayerSettings.macOS.urlSchemes = new string[] { deepLinkUrl };
 #endif
             }
@@ -33,7 +33,10 @@ namespace LYNC.Wallet
         {
             if (!string.IsNullOrEmpty(deepLinkUrl))
             {
-                UnityEditor.PlayerSettings.macOS.urlSchemes = new string[] { deepLinkUrl };
+                #if UNITY_EDITOR_OSX
+                    UnityEditor.PlayerSettings.macOS.urlSchemes = new string[] { deepLinkUrl };
+                #endif
+                
                 UnityEditor.PlayerSettings.iOS.iOSUrlSchemes = new string[] { deepLinkUrl };
             }
             else
