@@ -3,8 +3,7 @@ LYNC AA SDK is a no-code Unity SDK allowing game developers, Game studios, Indie
 Supported Platforms: PC (MacOS and Windows) and Mobile (Android and iOS).
 
 ## [Download the SDK] (https://github.com/LYNC-WORLD/LYNC-Unity-AA/releases/)
-
-[here] (https://github.com/LYNC-WORLD/LYNC-Unity-AA/releases/)
+Download the SDK: https://github.com/LYNC-WORLD/LYNC-Unity-AA/releases/
 
 ## Get your API Key
 Please get your API key before downloading the SDK from [here](https://www.lync.world/form.html)
