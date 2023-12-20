@@ -20,7 +20,7 @@ public class LoginTransactionExample : MonoBehaviour
         logout.interactable = false;
         mint.interactable = false;
 
-        debug_Text.text = "waiting api key check...";
+        debug_Text.text = "Waiting for API key checks!!";
         LyncManager.onLyncReady += (lyncManager) =>
         {
             debug_Text.text = "Valid API Key!";

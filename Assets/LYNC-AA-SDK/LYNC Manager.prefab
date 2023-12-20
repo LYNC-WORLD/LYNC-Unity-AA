@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02012e941de34e49b415e7c44b845df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deepLinkUrl: lync
+  deepLinkUrl: testgame
 --- !u!114 &8690440755687431483
 MonoBehaviour:
   m_ObjectHideFlags: 0

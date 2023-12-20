@@ -88,7 +88,7 @@ namespace LYNC.Wallet
         private IEnumerator ListenForConnectedWallet(System.Action<WalletData> onSuccess)
         {
             string text = File.ReadAllText(sharedFilePath);
-            if (text.IndexOf(DeepLinkRegistration.DeepLinkUrl) > -1)
+            if (text.ToLower().IndexOf(DeepLinkRegistration.DeepLinkUrl.ToLower()) > -1)
             {
                 string url = text.Replace(Process.GetCurrentProcess().Id.ToString(), "").Trim();
                 WalletData wallet = ExtractAndSaveWalletFromUrl(url);
