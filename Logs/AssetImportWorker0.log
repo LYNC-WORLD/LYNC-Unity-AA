@@ -258,3 +258,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3752.867072 seconds.
+  path: Assets/LYNC-AA-SDK/Example-2/LoginExample.unity
+  artifactKey: Guid(9e8cf5170238744aba5154e60fc4b4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC-AA-SDK/Example-2/LoginExample.unity using Guid(9e8cf5170238744aba5154e60fc4b4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d5748a5da3aae3113804dbeadde05e') in 0.060730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.819434 seconds.
+  path: Assets/LYNC-AA-SDK/Example/Login and Transactions Example.unity
+  artifactKey: Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LYNC-AA-SDK/Example/Login and Transactions Example.unity using Guid(d80ac2f4b62ea8349bbaa8ff8d56ec7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5d9387679cee6f1a71c8d4379d28ba') in 0.008936 seconds 
