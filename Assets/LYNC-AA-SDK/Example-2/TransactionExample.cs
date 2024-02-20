@@ -40,7 +40,7 @@ public class TransactionExample : MonoBehaviour
             string contractAddress = "0x245d9f137789b89d972b4688c056a329f452c5ee";
             string functionName = "mintNFT()";
             send721Trx.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, null, On721TrxCompleted, onError);
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, null,"0", On721TrxCompleted, onError);
         });
 
 
@@ -51,7 +51,7 @@ public class TransactionExample : MonoBehaviour
             string functionName = "mint(uint256 id, uint256 amount)";
             List<string> args = new List<string> { "1", "1" };
             send1155Trx.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args, On1155TrxCompleted, onError);
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, args,"0", On721TrxCompleted, onError);
         });
 
         // ******************* 20 *******************
@@ -61,7 +61,7 @@ public class TransactionExample : MonoBehaviour
             string functionName = "sendToken(uint256 amount)";
             List<string> args = new List<string> { "10" };
             send20Trx.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args, On20TrxCompleted, onError);
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, args,"0", On721TrxCompleted, onError);
         });
     }
 
