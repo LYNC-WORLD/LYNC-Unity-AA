@@ -12,7 +12,7 @@ public class loginExample : MonoBehaviour
     public string loginUrl;
     void Start()
     {
-        loginButton.interactable = false;
+        loginButton.interactable = LyncManager.Instance.isLyncReady;
         LyncManager.onLyncReady += (lyncManager) =>
         {
             loginButton.interactable = true;
@@ -22,15 +22,10 @@ public class loginExample : MonoBehaviour
                 Debug.Log("CONNECTED");
                 GoToNextScene();
             }
-            else
-            {
-                Debug.Log("DISCONNECTED");
-            }
         };
 
         loginButton.onClick.AddListener(() =>
         {
-            Debug.Log("Login clicked!");
             LyncManager.Instance.WalletAuth.ConnectWallet(loginUrl, (walletData) =>
             {
                 GoToNextScene();

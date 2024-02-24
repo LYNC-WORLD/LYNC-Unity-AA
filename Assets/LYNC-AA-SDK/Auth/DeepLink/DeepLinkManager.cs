@@ -27,8 +27,6 @@ namespace LYNC.Wallet
                 ClearSharedFile();
                 OpenLauncher();
             }
-            WalletAuth.walletConnectionRequested += StartProcess;
-            Application.deepLinkActivated += onDeepLinkActivated;
         }
 
         private void Awake()
@@ -36,10 +34,23 @@ namespace LYNC.Wallet
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
             }
             else
+            {
                 Destroy(gameObject);
+            }
+        }
+
+        private void OnEnable()
+        {
+            WalletAuth.walletConnectionRequested += StartProcess;
+            Application.deepLinkActivated += onDeepLinkActivated;
+        }
+
+        private void OnDisable()
+        {
+            // WalletAuth.walletConnectionRequested -= StartProcess;
+            Application.deepLinkActivated -= onDeepLinkActivated;
         }
 
         public void StartProcess(string loginUrl, System.Action<WalletData> onSuccess)
@@ -63,7 +74,6 @@ namespace LYNC.Wallet
             WalletData walletData = ExtractAndSaveWalletFromUrl(url);
             if (_onSuccess != null)
             {
-                WalletAuth.walletConnectionRequested -= StartProcess;
                 _onSuccess(walletData);
                 _onSuccess = null;
             }

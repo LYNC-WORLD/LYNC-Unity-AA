@@ -2129,9 +2129,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: LYNC Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 8690440755687431483, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
-      propertyPath: LyncAPIKey
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
