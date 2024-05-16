@@ -23,14 +23,12 @@ public class LoginTransactionExample : MonoBehaviour
         debug_Text.text = "Waiting for API key checks!!";
         LyncManager.onLyncReady += (lyncManager) =>
         {
-            debug_Text.text = "Valid API Key!";
             try
             {
                 WalletData walletData = WalletData.TryLoadSavedWallet();
-                debug_Text.text = "Valid API Key! - Wallet connected = " + walletData.WalletConnected;
                 if (walletData.WalletConnected)
                 {
-                    debug_Text.text = "EOA Address= " + walletData.PublicAddress +"\nSmart account = " + walletData.SmartAccount;
+                    debug_Text.text = "EOA Address= " + walletData.PublicAddress +"\nSmart account = " + walletData.SmartAccount+"\nEmail Address= " + walletData.Email +"\nUser Name = " + walletData.UserName;
                     logout.interactable = true;
                     mint.interactable = true;
                 }
@@ -51,7 +49,7 @@ public class LoginTransactionExample : MonoBehaviour
     {
         LyncManager.Instance.WalletAuth.ConnectWallet(loginUrl, (walletData) =>
         {
-            debug_Text.text = "EOA Address= " + walletData.PublicAddress + "\nSmart account = " + walletData.SmartAccount;
+            debug_Text.text = "EOA Address= " + walletData.PublicAddress +"\nSmart account = " + walletData.SmartAccount+"\nEmail Address= " + walletData.Email +"\nUser Name = " + walletData.UserName;
             login.interactable = false;
             logout.interactable = true;
             mint.interactable = true;
@@ -70,14 +68,14 @@ public class LoginTransactionExample : MonoBehaviour
 
     public void Mint()
     {
-        string contractAddress = "0x245d9f137789b89d972b4688c056a329f452c5ee";
-        string functionName = "mintNFT()";
-
+        string contractAddress = "0xAFBab1c079dA6076166D1677d6Ce4fFf57718066";
+        string functionName = "mintNFT(uint256 _mintNum)";
+        List<string> args = new List<string> { "1"};
         void onSuccess(TransactionData tsxData)
         {
             polygonScan.onClick.AddListener(() =>
             {
-                Application.OpenURL("https://mumbai.polygonscan.com/tx/" + tsxData.data.transactionHash);
+                Application.OpenURL("https://testnet.bscscan.com/tx/" + tsxData.data.transactionHash);
             });
 
             polygonScan.gameObject.SetActive(true);
@@ -93,7 +91,7 @@ public class LoginTransactionExample : MonoBehaviour
             tsxHash.text = "Error = " + msg;
         }
 
-        LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, null, onSuccess, onError);
+        LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args, onSuccess, onError);
         mint.interactable = false;
         polygonScan.gameObject.SetActive(false);
         tsxHash.gameObject.SetActive(false);

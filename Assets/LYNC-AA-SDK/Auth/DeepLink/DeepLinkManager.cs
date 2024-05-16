@@ -87,10 +87,10 @@ namespace LYNC.Wallet
             string publicAddress = url.Split(new string[] { "wallet=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             string encrypted = url.Split(new string[] { "encrypted=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             string smartAccount = url.Split(new string[] { "smartAccount=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
-            
-            UnityEngine.Debug.Log("publicAddress: "+publicAddress+" encrypted: "+ encrypted + "smartAccount: "+smartAccount);
+            string email = url.Split(new string[] { "email=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+            string userName = url.Split(new string[] { "userName=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             // Save wallet
-            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount);
+            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount,email,userName.Replace("%20", " "));
             return wallet;
         }
 

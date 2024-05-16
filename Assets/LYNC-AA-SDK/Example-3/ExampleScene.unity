@@ -2129,5 +2129,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LYNC Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8624128727400544269, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+      propertyPath: dappAPIKey
+      value: -SJkznVpT.5b1760ba-dbef-4361-a2c9-5499d3c8ed7d
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5805647402976630236, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+    - {fileID: 8690440755687431483, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+    - {fileID: 6429189280026421520, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+    - {fileID: 2010656287562948677, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
+    - {fileID: 1451669387458621888, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
