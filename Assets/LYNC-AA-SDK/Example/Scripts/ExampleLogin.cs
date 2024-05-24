@@ -32,7 +32,6 @@ public class ExampleLogin : MonoBehaviour
             {
                 login.interactable = false;
                 logout.interactable = true;
-                Debug.LogError("ikjdok"+walletData.IdToken);
                 addressTxt.text = "EOA Address: " + walletData.PublicAddress+  "\nSmartAccount: " + walletData.SmartAccount;
                 loginDateTxt.text = "Login Date: " + walletData.loginDate.ToString();
 
@@ -53,7 +52,6 @@ public class ExampleLogin : MonoBehaviour
             {
                 login.interactable = false;
                 logout.interactable = true;
-                Debug.LogError("ikjdok"+walletData.IdToken);
                 addressTxt.text = "EOA Address: " + wallet.PublicAddress + "\nSmartAccount: " + wallet.SmartAccount;
                 loginDateTxt.text = "Login Date: " + wallet.loginDate.ToString();
 
