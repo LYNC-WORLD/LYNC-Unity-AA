@@ -89,8 +89,11 @@ namespace LYNC.Wallet
             string smartAccount = url.Split(new string[] { "smartAccount=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             string email = url.Split(new string[] { "email=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             string userName = url.Split(new string[] { "userName=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+            string idToken = url.Split(new string[] { "idToken=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
+
+            // UnityEngine.Debug.LogError("publicAddress: "+publicAddress+" encrypted: "+ encrypted + "smartAccount: "+smartAccount+ "email: "+email+ "userName: "+name);
             // Save wallet
-            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount,email,userName.Replace("%20", " "));
+            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount,email,userName.Replace("%20", " "),idToken);
             return wallet;
         }
 
@@ -140,7 +143,7 @@ namespace LYNC.Wallet
             }
 
             Process regeditProcess = new Process();
-            regeditProcess.StartInfo.FileName = "reg.exe";
+            regeditProcess.StartInfo.FileName = "C:\\Windows\\System32\\reg.exe";
             regeditProcess.StartInfo.Arguments = "import \"" + tempFilePath + "\"";
             regeditProcess.StartInfo.UseShellExecute = false;
             regeditProcess.Start();
