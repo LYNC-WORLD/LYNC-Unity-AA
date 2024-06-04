@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8536144024681728995}
   - component: {fileID: 5805647402976630236}
-  - component: {fileID: 8690440755687431483}
-  - component: {fileID: 6429189280026421520}
-  - component: {fileID: 2010656287562948677}
-  - component: {fileID: 1451669387458621888}
+  - component: {fileID: 633388471523189135}
+  - component: {fileID: 712964520162077922}
+  - component: {fileID: 6907675134589676499}
+  - component: {fileID: 2000734713971400559}
   m_Layer: 0
   m_Name: LYNC Manager
   m_TagString: Untagged
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02012e941de34e49b415e7c44b845df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deepLinkUrl: testgame123
---- !u!114 &8690440755687431483
+  deepLinkUrl: lyncaa
+--- !u!114 &633388471523189135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,14 +58,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 8536144024681728999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -278681970, guid: f45692eb41e9e4c5bab593505bbbbd15, type: 3}
+  m_Script: {fileID: 14751786, guid: 8439d2ef296e7411b9037c75ee21dfa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rpcUrl: 
+  dappAPIKey: 
+--- !u!114 &712964520162077922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536144024681728999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -278681970, guid: 8439d2ef296e7411b9037c75ee21dfa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LyncAPIKey: 
-  chainID: 97
-  dappAPIKey: VwJ3xSDDu.da521114-e419-4cb5-8773-9d439c56e07b
+  chainID: 80002
+  network: 0
+  dappAPIKey: xrE0Wv7mq.e9ccfdc0-6a0e-4adc-93a9-bc1b7a01e0b0
   web3AuthClientID: BFKyj7mVffGPkfQh5iBeezv8Hc9HbL4kV553OnJ2JPRD37QyXs4NaGbHPI0NpbtgoH0PlkRc_Fi9-fpkPChBHIM
---- !u!114 &6429189280026421520
+--- !u!114 &6907675134589676499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536144024681728999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 394412872, guid: 8439d2ef296e7411b9037c75ee21dfa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2000734713971400559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,31 +102,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5193408af0b33a540b8e813fe17dbeca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2010656287562948677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8536144024681728999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 14751786, guid: f45692eb41e9e4c5bab593505bbbbd15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rpcUrl: 
-  dappAPIKey: 
---- !u!114 &1451669387458621888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8536144024681728999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 394412872, guid: f45692eb41e9e4c5bab593505bbbbd15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

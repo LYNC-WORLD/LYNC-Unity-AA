@@ -48,6 +48,7 @@ public class ExampleLogin : MonoBehaviour
 
         login.onClick.AddListener(() =>
         {
+            Debug.Log("LOGIN");
             Lync.WalletAuth.ConnectWallet(loginUrl, (wallet) =>
             {
                 login.interactable = false;

@@ -37,29 +37,29 @@ public class TransactionExample : MonoBehaviour
         // ******************* 721 *******************
         send721Trx.onClick.AddListener(() =>
         {
-            string contractAddress = "0x245d9f137789b89d972b4688c056a329f452c5ee";
-            string functionName = "mintNFT()";
+            string contractAddress = "0xAf61e084cCB2CcF57792cE8E0800907C1c9A1252";
+            string functionName = "mintNewNFT()";
             send721Trx.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, null,"0", On721TrxCompleted, onError);
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, null, On721TrxCompleted, onError);
         });
 
 
         // ******************* 1155 *******************
         send1155Trx.onClick.AddListener(() =>
         {
-            string contractAddress = "0x537d5298759F0151A1a08c9215F4e0382722d5C9";
+            string contractAddress = "0x79107Ad6bd949bD955640FC1C861A2d2909E2bbD";
             string functionName = "mint(uint256 id, uint256 amount)";
-            List<string> args = new List<string> { "1", "1" };
+            List<string> args = new List<string> { "1","1"};
             send1155Trx.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, args,"0", On1155TrxCompleted, onError);
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args, On1155TrxCompleted, onError);
         });
 
         // ******************* 20 *******************
         send20Trx.onClick.AddListener(() =>
         {
-            string contractAddress = "0xab2C8D39B611Eee2c0ABc9C12Af0221c1e861879";
+            string contractAddress = "0x3F163A36c778ef91417D579C0Ae25F3DF253a0bF";
             string functionName = "sendToken(uint256 amount)";
-            List<string> args = new List<string> { "10" };
+            List<string> args = new List<string> { "100" };
             send20Trx.interactable = false;
             LYNC.LyncManager.Instance.blockchainMiddleware.SendUserPaidTransaction(contractAddress, functionName, args,"0", On20TrxCompleted, onError);
         });

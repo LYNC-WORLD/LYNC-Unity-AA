@@ -22,13 +22,12 @@ public class TokenExample : MonoBehaviour
 
     void Start()
     {
-
-
         // OnClick
         mintBtn.onClick.AddListener(() =>
         {
             mintBtn.interactable = false;
-            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args, OnMintCompleted, onError);
+
+            LYNC.LyncManager.Instance.blockchainMiddleware.SendTransaction(contractAddress, functionName, args,OnMintCompleted, onError);
             StartCoroutine(TextAnimator());
         });
 
@@ -60,7 +59,7 @@ public class TokenExample : MonoBehaviour
         mintBtn.interactable = true;
     }
 
-    private void OpenPolyscan(string trxHash) => Application.OpenURL("https://mumbai.polygonscan.com/tx/" + trxHash);
+    private void OpenPolyscan(string trxHash) => Application.OpenURL("https://amoy.polygonscan.com/tx/" + trxHash);
 
     public void SetInteractable(bool interactable) => mintBtn.interactable = interactable;
 

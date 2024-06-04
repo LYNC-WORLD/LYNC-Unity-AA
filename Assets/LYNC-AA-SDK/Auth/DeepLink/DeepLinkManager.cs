@@ -56,8 +56,7 @@ namespace LYNC.Wallet
         public void StartProcess(string loginUrl, System.Action<WalletData> onSuccess)
         {
             _onSuccess = onSuccess;
-            string url = loginUrl + "?scheme=" + DeepLinkRegistration.DeepLinkUrl.Trim() + "&clientId=" + LyncManager.Instance.web3AuthClientID.Trim();
-
+            string url = loginUrl + "?scheme=" + DeepLinkRegistration.DeepLinkUrl.Trim() + "&clientId=" + LyncManager.Instance.web3AuthClientID.Trim()+"&chainId="+(int)LyncManager.Instance.chainID+"&network="+LyncManager.Instance.network;
             // Open auth page for standalone and mobile
             Application.OpenURL(url);
 
@@ -82,7 +81,7 @@ namespace LYNC.Wallet
         private WalletData ExtractAndSaveWalletFromUrl(string url)
         {
 
-            UnityEngine.Debug.Log(url);
+            // UnityEngine.Debug.Log(url);
 
             string publicAddress = url.Split(new string[] { "wallet=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
             string encrypted = url.Split(new string[] { "encrypted=" }, System.StringSplitOptions.None)[1].Split(new string[] { "&" }, System.StringSplitOptions.None)[0];
@@ -143,7 +142,7 @@ namespace LYNC.Wallet
             }
 
             Process regeditProcess = new Process();
-            regeditProcess.StartInfo.FileName = "C:\\Windows\\System32\\reg.exe";
+            regeditProcess.StartInfo.FileName = "reg.exe";
             regeditProcess.StartInfo.Arguments = "import \"" + tempFilePath + "\"";
             regeditProcess.StartInfo.UseShellExecute = false;
             regeditProcess.Start();

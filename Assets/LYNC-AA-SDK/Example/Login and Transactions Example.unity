@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 215910591}
   - component: {fileID: 215910590}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Logout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,15 +593,23 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 76c29d0c1b2744588b9734ef5be23496, type: 3}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: functionName
-      value: mintNFT()
+      value: mint(uint256 id, uint256 amount)
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: args.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: contractAddress
-      value: 0x245d9f137789b89d972b4688c056a329f452c5ee
+      value: 0x79107ad6bd949bd955640fc1c861a2d2909e2bbd
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: args.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: args.Array.data[1]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076211, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: m_Pivot.x
@@ -1396,7 +1404,7 @@ GameObject:
   - component: {fileID: 1742440376}
   - component: {fileID: 1742440375}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Login
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1582,15 +1590,19 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: b7cffab80eb644217a4634aade89a2d2, type: 3}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: functionName
-      value: mintNFT()
+      value: mint(uint256 id, uint256 amount)
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: args.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: contractAddress
-      value: 0x245d9f137789b89d972b4688c056a329f452c5ee
+      value: 0x79107ad6bd949bd955640fc1c861a2d2909e2bbd
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: args.Array.data[0]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 353000458041076211, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: m_Pivot.x
@@ -2116,6 +2128,22 @@ PrefabInstance:
       propertyPath: sprite
       value: 
       objectReference: {fileID: 21300000, guid: fb91523bbbbc74b848251f7faf63e586, type: 3}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: functionName
+      value: mintNewNFT()
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: args.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: contractAddress
+      value: 0xaf61e084ccb2ccf57792ce8e0800907c1c9a1252
+      objectReference: {fileID: 0}
+    - target: {fileID: 353000458041076209, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
+      propertyPath: args.Array.data[0]
+      value: 0x31e3F9Ae6285F34c60701Ca9f32937ED76fb8A41
+      objectReference: {fileID: 0}
     - target: {fileID: 353000458041076211, guid: 2b82f702696b84d47aa68b41fa617723, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2325,10 +2353,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LYNC Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 8690440755687431483, guid: 2a88366018afe964b965e199ff79c9c4, type: 3}
-      propertyPath: LyncAPIKey
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2338,8 +2362,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 8536144025013339708}
   - {fileID: 2074176309}
   - {fileID: 151384019}
   - {fileID: 659043643}
   - {fileID: 963194228}
+  - {fileID: 8536144025013339708}

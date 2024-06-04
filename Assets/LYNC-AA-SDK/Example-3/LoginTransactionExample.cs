@@ -77,7 +77,7 @@ public class LoginTransactionExample : MonoBehaviour
         {
             polygonScan.onClick.AddListener(() =>
             {
-                Application.OpenURL("https://mumbai.polygonscan.com/tx/" + tsxData.data.transactionHash);
+                Application.OpenURL("https://amoy.polygonscan.com/tx/" + tsxData.data.transactionHash);
             });
 
             polygonScan.gameObject.SetActive(true);
