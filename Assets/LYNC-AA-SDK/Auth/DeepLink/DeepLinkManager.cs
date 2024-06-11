@@ -11,12 +11,11 @@ namespace LYNC.Wallet
         // Windows configuration
         private readonly string launcherPath = (Application.streamingAssetsPath + "/Executables/Launcher.exe").Replace("/", "\\");
         private readonly string registerPath = (Application.streamingAssetsPath + "/Executables/register.reg").Replace("/", "\\");
-        private readonly string sharedFilePath = @"C:\ProgramData\launcherdata.txt";
+        private readonly string sharedFilePath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.CommonApplicationData);
 
         public static DeepLinkManager Instance { private set; get; }
 
         private System.Action<WalletData> _onSuccess = null;
-        private Coroutine runningCoroutine = null;
 
         private void Start()
         {
@@ -24,7 +23,6 @@ namespace LYNC.Wallet
             if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
             {
                 RegisterCustomProtocol();
-                ClearSharedFile();
                 OpenLauncher();
             }
         }
@@ -56,15 +54,14 @@ namespace LYNC.Wallet
         public void StartProcess(string loginUrl, System.Action<WalletData> onSuccess)
         {
             _onSuccess = onSuccess;
-            string url = loginUrl + "?scheme=" + DeepLinkRegistration.DeepLinkUrl.Trim() + "&clientId=" + LyncManager.Instance.web3AuthClientID.Trim()+"&chainId="+(int)LyncManager.Instance.chainID+"&network="+LyncManager.Instance.network;
+            string url = loginUrl + "?scheme=" + DeepLinkRegistration.DeepLinkUrl.Trim() + "&clientId=" + LyncManager.Instance.web3AuthClientID.Trim() + "&chainId=" + (int)LyncManager.Instance.chainID + "&network=" + LyncManager.Instance.network;
             // Open auth page for standalone and mobile
             Application.OpenURL(url);
 
             if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
             {
-                ClearSharedFile();
                 OpenLauncher();
-                runningCoroutine = StartCoroutine(ListenForConnectedWallet(onSuccess));
+                StartCoroutine(ListenForConnectedWallet(onSuccess));
             }
         }
 
@@ -92,38 +89,37 @@ namespace LYNC.Wallet
 
             // UnityEngine.Debug.LogError("publicAddress: "+publicAddress+" encrypted: "+ encrypted + "smartAccount: "+smartAccount+ "email: "+email+ "userName: "+name);
             // Save wallet
-            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount,email,userName.Replace("%20", " "),idToken);
+            WalletData wallet = new WalletData(publicAddress, encrypted.Replace(" ", "+"), smartAccount, email, userName.Replace("%20", " "), idToken);
             return wallet;
         }
 
         #region Windows platform methods
         private IEnumerator ListenForConnectedWallet(System.Action<WalletData> onSuccess)
         {
-            string text = File.ReadAllText(sharedFilePath);
+            string text = File.ReadAllText(Path.Combine(sharedFilePath, ProcessType.UNITY_REDIRECT.ToString()));
             if (text.ToLower().IndexOf(DeepLinkRegistration.DeepLinkUrl.ToLower()) > -1)
             {
                 string url = text.Replace(Process.GetCurrentProcess().Id.ToString(), "").Trim();
                 WalletData wallet = ExtractAndSaveWalletFromUrl(url);
                 onSuccess?.Invoke(wallet);
 
-                ClearSharedFile();
-                StopCoroutine(runningCoroutine);
+                StopAllCoroutines();
             }
 
             yield return new WaitForSeconds(0.1f);
 
-            runningCoroutine = StartCoroutine(ListenForConnectedWallet(onSuccess));
+            StartCoroutine(ListenForConnectedWallet(onSuccess));
         }
 
         private void OpenLauncher()
         {
-            string processId = Process.GetCurrentProcess().Id.ToString();
-            Process p = Process.Start(launcherPath, "processid" + processId);
+            string processId = System.Diagnostics.Process.GetCurrentProcess().Id.ToString();
+            StartProcess(ProcessType.UNITY_REDIRECT, processId);
         }
 
-        private void ClearSharedFile()
+        private void ClearSharedFile(ProcessType processType)
         {
-            using (StreamWriter writer = File.CreateText(sharedFilePath))
+            using (StreamWriter writer = File.CreateText(Path.Combine(sharedFilePath, processType.ToString())))
             {
                 writer.Write("");
             }
@@ -141,15 +137,35 @@ namespace LYNC.Wallet
                 writer.Write(temp);
             }
 
-            Process regeditProcess = new Process();
-            regeditProcess.StartInfo.FileName = "reg.exe";
-            regeditProcess.StartInfo.Arguments = "import \"" + tempFilePath + "\"";
-            regeditProcess.StartInfo.UseShellExecute = false;
-            regeditProcess.Start();
-            regeditProcess.WaitForExit();
+            string args = "C:\\Windows\\System32\\reg.exe,import \"" + tempFilePath + "\"";
+            StartProcess(ProcessType.UNITY_SAVEDEEPLINK, args);
+        }
 
-            File.Delete(tempFilePath);
+        private void StartProcess(ProcessType processType, string args)
+        {
+            ClearSharedFile(processType);
+            string temp = "";
+            if (processType == ProcessType.UNITY_REDIRECT)
+            {
+                temp = processType.ToString() + args;
+            }
+            else if (processType == ProcessType.UNITY_SAVEDEEPLINK)
+            {
+                temp = args;
+            }
+
+            using (StreamWriter writer = new StreamWriter(Path.Combine(sharedFilePath, processType.ToString())))
+            {
+                writer.Write(temp);
+            }
+
+            Application.OpenURL(launcherPath);
         }
         #endregion
+    }
+
+    public enum ProcessType
+    {
+        UNITY_REDIRECT, UNITY_SAVEDEEPLINK
     }
 }
