@@ -105,7 +105,7 @@ onError: If the transactions failed, this handles what to do.
 
 ### Setup Gasless Transactions with Biconomy
 
-To enable gasless transactions via biconomy, Register a new paymaster on the [Biconomy Dashboard](https://dashboard.biconomy.io/)https://dashboard.biconomy.io/. 
+To enable gasless transactions via biconomy, Register a new paymaster with version 1.0.1 on the [Biconomy Dashboard](https://dashboard.biconomy.io/)https://dashboard.biconomy.io/. 
 
 ![image](https://github.com/LYNC-WORLD/LYNC-Unity-AA/assets/42548654/b73988dc-e456-4129-b009-cfb7906235b3)
 
